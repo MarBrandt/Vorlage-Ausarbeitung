@@ -1,5 +1,16 @@
 \input{./latex/preamble.tex}
 
+\newcommand*{\mytitle}{\LaTeX-Vorlage für Berichte, Bachelor- oder Masterarbeiten} % Titel
+\newcommand*{\myinstitute}{Hochschue Flensburg} % Institut
+\newcommand*{\myfaculty}{Fachbereich 1: \textit{Musterstudiengang}} % Weitere Hinweise
+\newcommand*{\myauthor}{Max Mustermann} % Autoren
+\newcommand*{\myreporttype}{Abschlussarbeit} % Bericht-Typ
+\newcommand*{\mygraduation}{Master of Engineering} % Vollständige Anschrift
+\newcommand*{\firstexaminer}{Prof. Dr.-Ing. Max Mustermann} % Ort
+\newcommand*{\secondexaminer}{Prof. Dr.-Ing. Maxima Musterfrau} % Ort
+\newcommand*{\mydate}{\today} % Datum
+
+
 % ============= Dokumentbeginn =============
 
 \begin{document}
@@ -7,8 +18,8 @@
 % Seiten ohne Kopf- und Fußzeile sowie Seitenzahl
 \pagestyle{empty}
 
-\include{latex/01_titel}		% Einbinden der Titelseite
-\newpage 					% Um Seite nach der Titelseite einzubinden -> bei eigener Tittelseite und nicht der Latex-Version erforderlich
+\include{latex/01_titel}	% Einbinden der Titelseite
+\newpage 					% Um Seite nach der Titelseite einzubinden -> bei eigener Titelseite und nicht der Latex-Version erforderlich
 \thispagestyle{empty}
 \quad 
 \newpage
@@ -51,7 +62,5 @@ Max Mustermann\\
 \appendix
 
 \include{src/anhang}
-
-
 
 \end{document}
